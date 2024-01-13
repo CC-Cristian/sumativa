@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.news-card {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.news-title {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.news-image {
+    width: 50%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    background-color: #ccc;
+    float: left;
+}
+
+.news-description {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .news-card {
+        width: 48%; /* 2 tarjetas por fila en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news-card {
+        width: 100%; /* 1 tarjeta por fila en pantallas pequeñas */
+    }
+
+    .news-image {
+        width: 200px; /* Ancho fijo para pantallas pequeñas */
+    }
+}

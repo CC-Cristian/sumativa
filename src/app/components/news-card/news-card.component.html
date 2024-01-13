@@ -1,0 +1,12 @@
+<!-- src/app/components/news-card/news-card.component.html -->
+<ion-card [class]="layoutClass">
+  <img [src]="newsImage" alt="News Image" *ngIf="newsImage" />
+
+  <ion-card-header>
+    <ion-card-title>{{ newsTitle }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{ newsDescription }}
+  </ion-card-content>
+</ion-card>
